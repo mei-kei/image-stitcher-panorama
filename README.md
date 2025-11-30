@@ -60,4 +60,4 @@ If stitching is successful (`status == 0`)
   - Cause: Mismatch between BGR and RGB colour spaces.
   - Fix: Make sure you convert to RGB for `plt.imshow` but convert back to BGR for `cv2.imwrite`.
 
-Portions of the code logic and documentation for this project were generated with the assistance of [Google Gemini](https://gemini.google.com/app).
+<small>_Portions of the code logic and documentation for this project were generated with the assistance of [Google Gemini](https://gemini.google.com/app)._<small>
