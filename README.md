@@ -1,4 +1,5 @@
-# Basic Image Stitcher
+# COSC 4373: Computer Vision
+## Project: Basic Image Stitcher (Panorama Creator)
 This project is a Python-based computer vision tool that automatically stitches a series of overlapping images into a single panoramic image. It utilises the OpenCV library to handle feature detection, matching, and image warping.
 
 The respective code is designed to run in a Jupyter Notebook environment (specifically Google Colab) and includes functionality to visualise the input sequence and save the final high-resolution result to Google Drive.
