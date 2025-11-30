@@ -4,7 +4,7 @@ This project is a Python-based computer vision tool that automatically stitches 
 
 The respective code is designed to run in a Jupyter Notebook environment (specifically Google Colab) and includes functionality to visualise the input sequence and save the final high-resolution result to Google Drive.
 
-# Dependencies & Libraries
+## Dependencies & Libraries
 The script requires the following Python libraries:
 
 - OpenCV (`cv2`): Used for image reading (`imread`), colour conversion (`cvtColor`), and the core stitching algorithms (`Stitcher_create`)
@@ -12,7 +12,7 @@ The script requires the following Python libraries:
 - Glob (`glob`): Used for retrieving file paths matching a specific pattern (e.g., `*.jpeg`)
 - Math (`math`): Used for calculating grid dimensions when displaying input images.
 
-# Setup and Configuration
+## Setup and Configuration
 Environment: The script is optimised for Google Colab
 Image Source: Images should be stored in a Google Drive folder
 Path Configuration:
@@ -20,7 +20,7 @@ Path Configuration:
   - Update the `images_path` variable to point to your input folder
   - Update the `output_path` variable to point to where you want the result saved.
 
-# Step-by-Step Process of How It Works
+## Step-by-Step Process of How It Works
 **1. Image Loading and Preprocessing**
 The scrippt uses `glob` to find all images in the target directory. It sorts them alphanumerically to make sure they're in the correct sequence.
   - **Colour Conversion**: OpenCV reads images in BGR (Blue-Green-Red) format by default. The script converts these to RGB immediately so they display correctly in Matplotlib.
@@ -47,7 +47,7 @@ If stitching is successful (`status == 0`)
 - It converts the RGB result back to **BGR**,
 - It writes the file to the defined output path using `cv2.imwrite`.
 
-# Troubleshooting
+## Troubleshooting
 **"Stitching failed! Error code: 1"**
   - Cause: Not enough distinctive features found.
   - Fix: Make sure the images have at least 30%-50% overlap. Avoid stitching featureless walls or plain skies.
