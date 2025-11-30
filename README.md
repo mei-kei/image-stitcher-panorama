@@ -39,7 +39,7 @@ The operation returns a `status` code:
 - `0` (cv2.Sticher_OK) would mean success
 - `1` would mean that more images are required
 - `2` or `3` would mean that the Homography/Camera estimation failed (usually due to lack of distinct features or insufficient overlap)
-- 
+
 **5. Exporting Results**
 If stitching is successful (`status == 0`)
 - The script displays the result inline,
